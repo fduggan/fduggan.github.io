@@ -1,5 +1,18 @@
 <html>
 	<head>
+		<script type="text/Javascript" src"JavyJava.js"></script>
+		<script>
+			var toggleColor = true
+			function myFunction() {
+				if (toggleColor = true) {
+			    	document.getElementById("demo").style.color = "purple";
+				} else {
+			    	document.getElementById("demo").style.color = "navy";
+			    }
+				toggleColor = !toggleColor;
+			}
+
+		</script>
 		<title> You got to love Faith</title>
 		<style> 
 			.flex-container {
@@ -15,12 +28,11 @@
 			    -webkit-flex: 1 100%;
 			    flex: 1 100%;
 			}
-
 			.article {
 			    text-align: left;
 			}
 
-			header {background: black;color:white;}
+			header {background: black;color:red;}
 			footer {background: #aaa;color:white;}
 			.nav {background:#eee;}
 
@@ -46,25 +58,39 @@
 			h3 {
 				text-align: center;
 			}
+			border-collapse: collapse;
+			}
+
+				table, td, th {
+   					 border: 1px solid black;
+			}
+			body {
+    	background-color: #93A8AC;
+			}
 		</style>
 	</head>
 	<body>
 		<article class="article">
-			<h1 style="color:green">First Impressions</h1>
-				<p>"When I first met Faith I thought she was straight foward (holds no punches), Honest, cold, standoffish, patient (toleration the people around you). For me, you present yourself like a well mannered and typical teenager. By the way, I still thing theses thing about you but... and all the mushy thing that make me love and adore you." --YT</p>
+			<img src="kinder1.jpg" style=width:250px;height>
+			<img src="kinder2.jpg" style=width:250;height>
+			<img src="food.PNG" style=width:250;height 400>
+			<img src="messy.jpg" style=width:250;height>
+			<h1 style="color:#731963">About me</h1>
+				<p id="demo" onclick="myFunction()" style="color:#0D1321">Hey, I'm Faith, but I bet you already know that, and this is my first website. I am a begining coder and I have hidden fun little surprises throughout, like pixar and disney. I believe that I am intresting but thats really up for you to decide. Have fun Exploring.
 			<h2 style="color:navy">Schools</h2>
-				<p>It takes a while for people to tolerate me. When you first meet me I can be kind, happy, grumpy, annoying or all of them at once. It depends on how I slept, how annoying my sister has been, work load, parents, friends and normal everyday bs.In my 16 years of life I have gone to a grand total of 2 schools.</p>
+				<p style="color:#0D1321">It takes a while for people to tolerate me. When you first meet me I can be kind, happy, grumpy, annoying or all of them at once. It depends on how I slept, how annoying my sister has been, work load, parents, friends and normal everyday bs.In my 16 years of life I have gone to a grand total of 2 schools.</p>
 				<ol>
 					<li><a href="http://www.brickchurchschool.org/RelId/33637/ISvars/default/Home.htm" target="_blank">Brick Church School</a></li>
 					<li><a href="http://www.nightingale.org/" target="_blank">The Nightingale Bamford School</a></li>
 				</ol>
-				<p>I have already graduated from Brick and I am going on my 12th year at Nightingale. I have laughed, I have cried, I have yelled, I have screamed, I have slept, I have eaten. I have lived and breathed Nightingale. Betweem the tunics, skirts, bird logos, and perfect uniforms I am a Nightingale girl. It is as if the Nightingale community has inject some sort of serum in my blood when I first walked through those big blue doors in a tunic, white sneakers and those white shirts and the puffy sleeves.I have learned to love and hate my school, I have learned to gossip and Judge, and I have also learned the quadratic formula.</p>
-			<h3 style="color:maroon">Family and Friends</h3>
-				<p>The good news is I have a family. The bad news is I have a family. Although most of the time I love the, love and hate is a thin line that the have cross. I have a sister, but I dont admit that in public. One Father and about 10 moms, a couple hundred aunts (all but two are not related to me), one (sometimes drunk) uncle, 2 grandmas, and hundreds of cousins. Of course, I don't know all my cousins but they are there. The reasons I have so many "aunts" is because I didn't get the best of realives, and the ones that had promise have passed away, so I choose my family. The photos below are pictures of my sometimes beloved family.</p>
+				<p style="color:#0D1321">I have already graduated from Brick and I am going on my 12th year at Nightingale. I have laughed, I have cried, I have yelled, I have screamed, I have slept, I have eaten. I have lived and breathed Nightingale. Betweem the tunics, skirts, bird logos, and perfect uniforms I am a Nightingale girl. It is as if the Nightingale community has inject some sort of serum in my blood when I first walked through those big blue doors in a tunic, white sneakers and those white shirts and the puffy sleeves.I have learned to love and hate my school, I have learned to gossip and Judge, and I have also learned the quadratic formula.</p>
+			<h3 style="color:#C20114">Family and Friends</h3>
+				<p style="color:#0D1321">The good news is I have a family. The bad news is I have a family. Although most of the time I love the, love and hate is a thin line that the have cross. I have a sister, but I dont admit that in public. One Father and about 10 moms, a couple hundred aunts (all but two are not related to me), one (sometimes drunk) uncle, 2 grandmas, and hundreds of cousins. Of course, I don't know all my cousins but they are there. The reasons I have so many "aunts" is because I didn't get the best of realives, and the ones that had promise have passed away, so I choose my family. The photos below are pictures of my sometimes beloved family.</p>
 			</article>
-			<img src="FAm.jpg" style="width:304px;height:228px;">
+			<img onmouseover="Words(this)" onmouseout="normalImg(this)" src="FAm.jpg" style="width:304px;height:228px;">
 			<p>Duggan cousins are(in order from left to right):</p>
-				<ul>
+			<span onmouseover="this.style.color='#0B3C5D'">Duggan Cousins!</span>
+				<ul onmouseover= "Style">
 					<li>Kieran</li>
 					<li>Sean</li>
 					<li>Catherine</li>
@@ -72,7 +98,7 @@
 					<li>Isabella(sister)</li>
 					<li>Kyle</li>
 				</ul>
-			<img src="Xanthe.jpg" style=width:250px;height178
-		:>
+			<img src="Xanthe.jpg" style=width:250px;height178>
+			<p> Xanthe and I </P>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-class person 
+class Person 
 {
 	constructor (first_name, last_name, address) 
 	{

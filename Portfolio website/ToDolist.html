@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style></style>
+			<title>What To Do?</title>
+		</head>
+		<body>
+			<h4>What to do?</h4>
+			<input id="TODO" placeholder="Enter a to do"></input>
+			<button  onclick="makeTask()">Add to to do list</button>
+			<button id="Delete" onclick="Delete()">Delete to do</button>
+			<div id="list"></div>
+			<script>
+				var nid = 0
+
+				function makeTask(){
+					var text= document.getElementById("TODO").value;
+					var br= document.createElement("br");
+
+					var cb = document.createElement("input");
+					cb.type = "checkbox";
+					cb.id = nid;
+
+					var label = document.createElement("label");
+					label.id = nid +1;
+					label.htmlFor = nid;
+					label.appendChild(document.createTextNode(text));
+
+					list.appendChild(cb);
+					list.appendChild(label);
+					list.appendChild(br);
+
+
+					nid +=2
+					console.log(nid)
+					console.log(list.child)
+
+				}
+
+
+				function Delete(){
+					console.log("deleted");
+					for(var x=0; x < nid; x+=2){
+						var rid = x + "";
+						var ridbox = document.getElementById(rid);
+						console.log("rid");
+						console.log(x);
+						if (ridbox == null){
+							continue;
+						}
+						if (ridbox.checked){
+							console.log("x");
+							var y = x+1;  
+							console.log(y);
+							var ridden = y + "";
+							var ridtext= document.getElementById(ridden);
+							ridbox.remove();
+							ridtext.remove();
+							console.log(x);
+						}
+					}
+				}
+ 
+			</script>
+		</body>
+	</html>

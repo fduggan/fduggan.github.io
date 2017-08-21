@@ -7,11 +7,12 @@
 		<body>
 			<h4>What to do?</h4>
 			<input id="TODO" placeholder="Enter a to do"></input>
-			<button  onclick="makeTask()">Add to to do list</button>
+			<!-- <button  onclick=makeTask()">Add to to do list</button> -->
+			<button onclick="addTodo()">Add To Do</button>
 			<button id="Delete" onclick="Delete()">Delete to do</button>
 			<div id="list"></div>
 			<script>
-				var nid = 0
+				/*var nid = 0
 
 				function makeTask(){
 					var text= document.getElementById("TODO").value;
@@ -60,7 +61,9 @@
 						}
 					}
 				}
- 
+ 				*/
 			</script>
+			<script src="db.js"></script>
+			<script src="app_skeleton.js"></script>
 		</body>
 	</html>
